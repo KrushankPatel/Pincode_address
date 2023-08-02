@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pincode Info Display</title>
+
+    <!-- Css -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <hr style="margin: 3rem;color: aliceblue;" />
+    <p class="head">Form Data</p>
+
+    <!-- form -->
+    <div class="sub-2div-sec-3">
+        <form action="" class="form-contact-me" onsubmit="return displayData();">
+            <div class="name">
+                <label>Your Name:</label>
+                <input class="input-form-contect-me" type="text" name="uname" required>
+            </div>
+
+            <div class="number">
+                <label>Phone Number:</label>
+                <input class="input-form-contect-me" type="tel" name="unum" required>
+            </div>
+            <div class="email">
+                <label>E-mail:</label>
+                <input class="input-form-contect-me" type="email" name="uemail" required>
+            </div>
+
+            <div class="messagebox">
+                <label>Pincode:</label>
+                <!-- Add id attribute to the pincode input field -->
+                <input class="input-form-contect-me" type="number" id="pincodeInput" name="upin">
+                <span id="pincodeError" style="color: red; display: none;">Field cannot be blank</span>
+            </div>
+
+            <div class="button">
+                <input class="button-form-input" type="submit" value="Submit">
+            </div>
+        </form>
+    </div>
+
+    <!-- data will be displayed here based on input -->
+    <div id="pincodeData"></div>
+
+    <!-- JavaScript -->
+    <script src="index.js"></script>
+</body>
+
+</html>
